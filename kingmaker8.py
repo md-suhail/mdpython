@@ -1,44 +1,46 @@
 #!/usr/bin/python3
 import random
-i=0
-def myroll():
-	return random.randit(1,6)
-while(i<=100):
-	n=int(input("press r to roll the dice"))
-	if(n=='r'):
-		r=myroll()
-		i=i+r
-		print("new position is",i)
-	if (i==3):
-    	i=34
-    	print("congrats u get a ladder to 34")
-    elif (i==8):
-    	i=37
-    	print("congrats u get a ladder to 37")
-    elif (i==40):
-    	i=68
-    	print("congrats u get a ladder to 68")
-    elif (i==52):
-    	i=81
-    	print("congrats u get a ladder to 81")
-    elif (i==76):
-    	i=97
-    	print("congrats u get a ladder to 97")
-    elif (i==11):
-    	i=2
-    	print("sorry u got a snake down to 2")
-    elif (i==25):
-    	i=4
-    	print("sorry u got a snake down to 4")
-    elif (i==38):
-    	i=9
-    	print("sorry u got a snake down to 9")
-    elif (i==65):
-    	i=46
-    	print("sorry u got a snake down to 46")
-    elif (i==89):
-    	i=70
-    	print("sorry u got a snake down to 70")
-    elif (i==93)
-        i=64
-        print("sorry u got a snake down to 64")
+count=0
+r=0
+while count<=100:
+	roll=input("press r to roll dice")
+	if roll=="r":
+		r=random.randint(1,6)
+		count=count+r
+		print("ur random number",r)
+		print("ur on",count)
+	if count==8:
+		count=37
+		print("u have climbed to",count)
+	elif count==13:
+		count=34
+		print("u have climbed to",count)
+	elif count==40:
+		count=68
+		print("u have climbed to",count)
+	elif count==52:
+		count=81
+		print("u have climbed to",count)
+	elif count==76:
+		count=97
+		print("u have climbed to",count)
+	elif count==11:
+		count=2
+		print("u have down to",count)
+	elif count==25:
+		count=4
+		print("u have down to",count)
+	elif count==38:
+		count=9
+		print("u have down to",count)
+	elif count==65:
+		count=46
+		print("u have down to",count)
+	elif count==89:
+		count=70
+		print("u have down to",count)
+	elif count==93:
+		count=64
+		print("u have down to",count)
+	elif count>=100:
+		print("u have won")
