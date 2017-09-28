@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 a=34
+#which executes arthemetic operations
 print(a)
 print(a+5)
 print(a-22)
